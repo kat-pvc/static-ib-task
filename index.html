@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Length Perception</title>
+  <!-- Load jsPsych CSS -->
+  <script src="jspsych/dist/jspsych.js"></script>
+  <link rel="stylesheet" href="jspsych/dist/jspsych.css">
+    <!-- For Pavlovia Integration 
+  <script type="text/javascript" src="lib/jspsych-7-pavlovia-2022.1.1.js"></script>
+-->
+  
+  
+  <style>
+
+/* Global style for all buttons, including jsPsych buttons */
+button, .jspsych-btn {
+    border: 1px solid #000; /* Black border */
+    background-color: #0056b3; /* Dark blue background for better contrast */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for a consistent size */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+    margin: 5px; /* Margin for spacing between buttons */
+    font-family: Arial, sans-serif; /* Consistent font family */
+}
+
+/* Hover effect for all buttons */
+button:hover, .jspsych-btn:hover {
+    background-color: #004085; /* Even darker blue background on hover */
+    border-color: #002f6c; /* Darker border on hover */
+}
+
+/* Set the background color of the body to white 
+  body {
+    background-color: #FFFFFF;
+}
+*/
+
+/* Set the background color of the body to grey*/
+  body {
+    background-color: #BEBEBE
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Load jsPsych and plugins  -->
+  <!-- For Pavlovia integration -->
+  <script src="jspsych/dist/plugin-browser-check.js"></script>
+  <script src="jspsych/dist/plugin-preload.js"></script>
+  <script src="jspsych/dist/plugin-fullscreen.js"></script>
+  <script src="jspsych/dist/plugin-call-function.js"></script>
+  <script src="jspsych/dist/plugin-html-keyboard-response.js"></script>
+  <script src="jspsych/dist/plugin-html-button-response.js"></script>
+  <script src="jspsych/dist/plugin-image-keyboard-response.js"></script>
+  <script src="jspsych/dist/plugin-image-button-response.js"></script>
+  <script src="jspsych/dist/plugin-instructions.js"></script>
+  <script src="jspsych/dist/plugin-survey-html-form.js"></script>
+  <script src="jspsych/dist/plugin-virtual-chinrest.js"></script>
+  <script src="jspsych/dist/plugin-survey-multi-choice.js"></script>
+  <!-- <script src="jspsych/dist/jspsych-7-pavlovia-2022.1.1.js"></script>  -->
+
+  <!-- Load your experiment script -->
+  <script src="experiment.js"></script>
+</body>
+</html>
